@@ -5,7 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: mode === 'production' ? '/App-Signup-Login-Task/' : '/',
+  base: "./", // 👈 FIXED for Vercel deployment
   server: {
     host: "::",
     port: 8080,
