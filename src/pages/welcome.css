@@ -1,0 +1,53 @@
+/* Styles specific to the Welcome page */
+.welcome-root {
+  position: relative;
+  min-height: 100vh;
+  background: var(--background);
+}
+
+.decorative-dots {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.decorative-dots .dot {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  border-radius: 9999px;
+  background: #f59e0b; /* amber */
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+}
+
+.decorative-dots .dot:nth-child(1) { top: 20px; left: 20px; }
+.decorative-dots .dot:nth-child(2) { top: 68px; left: 48px; }
+.decorative-dots .dot:nth-child(3) { top: 116px; left: 76px; }
+.decorative-dots .dot:nth-child(4) { top: 164px; left: 104px; }
+.decorative-dots .dot:nth-child(5) { top: 212px; left: 132px; }
+.decorative-dots .dot:nth-child(6) { top: 260px; left: 160px; }
+
+.welcome-content {
+  max-width: 320px;
+  /* push content down so the decorative dots don't overlap the heading */
+  margin-top: 140px;
+}
+
+.welcome-hero-title {
+  font-size: 1.125rem; /* ~18px */
+  font-weight: 800;
+  color: hsl(var(--foreground));
+  margin-bottom: 0.5rem;
+}
+
+.welcome-hero-sub {
+  color: hsl(var(--muted-foreground));
+  font-size: 0.875rem; /* ~14px */
+  margin-bottom: 1.25rem;
+}
