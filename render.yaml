@@ -1,0 +1,10 @@
+services:
+  - type: static-site
+    name: popx-login-signup
+    repo: rakeshthulla/popx_login-and-signup
+    branch: main
+    env: none
+    buildCommand: npm run build
+    publishPath: dist
+    plan: free
+    pullRequestPreviewsEnabled: true
